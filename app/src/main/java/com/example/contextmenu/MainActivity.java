@@ -11,11 +11,35 @@ import android.widget.EditText;
 import android.widget.Toast;
 import android.widget.ToggleButton;
 
+/**
+ * The type Main activity.
+ */
 public class MainActivity extends AppCompatActivity {
+    /**
+     * The Tg.
+     */
     ToggleButton tg;
-    EditText et1, et2;
-    Double first,multiplier;
+    /**
+     * The Et 1.
+     */
+    EditText et1, /**
+     * The Et 2.
+     */
+    et2;
+    /**
+     * The First.
+     */
+    Double first, /**
+     * The Multiplier.
+     */
+    multiplier;
+    /**
+     * The Type.
+     */
     int type;
+    /**
+     * The Si.
+     */
     Intent si;
 
     @Override
@@ -28,6 +52,12 @@ public class MainActivity extends AppCompatActivity {
         si = new Intent(this,MainActivity3.class);
     }
 
+    /**
+     * Validnumber boolean.
+     *
+     * @param str the str
+     * @return the boolean
+     */
     public boolean validnumber(String str) {
         if (str.equals("") || str.equals("-") || str.equals(".") || str.equals("-.")) {
             return false;
@@ -38,6 +68,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    /**
+     * Series.
+     *
+     * @param view the view
+     */
     public void Series(View view) {
         String st1 = et1.getText().toString();
         boolean legalnum1 = validnumber(st1);

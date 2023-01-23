@@ -13,16 +13,49 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
+/**
+ * The type Main activity 2.
+ */
 public class MainActivity2 extends AppCompatActivity implements View.OnCreateContextMenuListener {
+    /**
+     * The Lv.
+     */
     ListView Lv;
+    /**
+     * The Tv 1.
+     */
     TextView tv1;
+    /**
+     * The Arr.
+     */
     String[] arr = new String[20];
+    /**
+     * The Sum array.
+     */
     Double[] sumArray = new Double[20];
+    /**
+     * The First.
+     */
     Double first;
+    /**
+     * The Multiplier.
+     */
     Double multiplier;
+    /**
+     * The Type.
+     */
     int type;
+    /**
+     * The Index.
+     */
     int index;
+    /**
+     * The Sum.
+     */
     Double sum;
+    /**
+     * The Si 2.
+     */
     Intent si2;
 
 
@@ -58,6 +91,12 @@ public class MainActivity2 extends AppCompatActivity implements View.OnCreateCon
         }
     }
 
+    /**
+     * E int.
+     *
+     * @param str the str
+     * @return the int
+     */
     public int e (String str){
         int s = str.indexOf(".");
         int e = str.indexOf("E");
@@ -68,6 +107,10 @@ public class MainActivity2 extends AppCompatActivity implements View.OnCreateCon
             return (str.substring(s+1)).length()+Integer.parseInt(str.substring(e+1));
         }
     }
+
+    /**
+     * Mathemtical.
+     */
     public void Mathemtical() {
         for (int i = 0; i < 20; i++) {
             sumArray[i] = first;
@@ -83,6 +126,9 @@ public class MainActivity2 extends AppCompatActivity implements View.OnCreateCon
         }
     }
 
+    /**
+     * Geometrical.
+     */
     public void Geometrical() {
         for (int i = 0; i < 20; i++) {
             sumArray[i] = first;
@@ -141,10 +187,11 @@ public class MainActivity2 extends AppCompatActivity implements View.OnCreateCon
     }
 
 
-
-
-
-
+    /**
+     * Back.
+     *
+     * @param view the view
+     */
     public void back(View view) {
         finish();
     }

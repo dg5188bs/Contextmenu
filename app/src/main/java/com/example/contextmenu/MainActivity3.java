@@ -6,6 +6,9 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
+/**
+ * The type Main activity 3.
+ */
 public class MainActivity3 extends AppCompatActivity {
 
     @Override
